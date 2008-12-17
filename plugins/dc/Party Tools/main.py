@@ -52,7 +52,7 @@ class Main(Plugin):
         else:
             comment = ''
      
-        context.reply( context.sender+' rolled: '+str(sum)+comment )
+        context.reply( '"'+context.sender+'" rolled: '+str(sum)+comment )
      
      # smack someone
     def smack(self):

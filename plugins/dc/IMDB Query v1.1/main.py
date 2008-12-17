@@ -21,5 +21,5 @@ class Main(Plugin):
         This is the command to get the TV listings.
         It could take a while so it must run on another thread.
         """
-        msg = context.sender+': '+imdblib.getEps(context.args)
+        msg = '"'+context.sender+'": '+imdblib.getEps(context.args)
         context.tell(msg)
