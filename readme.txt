@@ -8,7 +8,7 @@ Nodeforge is special in that it is highly modular. Even the parsing code is a pl
 The network loop uses the Twisted library.
 
 Website:
-http://code.google.com/p/nodeforge/
+https://github.com/impredicative/nodeforge
 
 Requirements:
 Python 2.5+
