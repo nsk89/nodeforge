@@ -20,5 +20,4 @@ Be sure to edit configure.py for settings.
 
 License:
 Nodeforge is licensed under the BSD license found in license.txt.
-
 All code in the plugins folder is put under public domain including imdblib which is user contributed.
