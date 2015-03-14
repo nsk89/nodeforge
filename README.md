@@ -1,8 +1,13 @@
-Nodeforge
+Nodeforge is a framework for network communications in Python 2.5.
+
+It supports multiple IRC and DC++ bots.
+
+Nodeforge is special in that it is highly modular. Even the parsing code is a plugin which can be changed while connected.
+
+The network loop uses the Twisted library.
 
 Website:
 http://code.google.com/p/nodeforge/
-
 
 Requirements:
 Python 2.5+
