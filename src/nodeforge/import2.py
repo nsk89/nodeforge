@@ -5,13 +5,13 @@ means imports will be slower.
 """
 
 
-import __builtin__, sys
-oldimport = __builtin__.__import__
+import builtins, sys
+oldimport = builtins.__import__
 
 def customimport(name, globals=None, locals=None, fromlist=None):
     try:    
         mod = oldimport(name, globals, locals, fromlist)
-    except SystemError, e:
+    except SystemError as e:
         # Get the module to save the import to.
         # It should be saved as _self.
         # This is defined in main.PluginManager.loadModule
@@ -23,5 +23,5 @@ def customimport(name, globals=None, locals=None, fromlist=None):
 
     return mod
 
-__builtin__.__import__ = customimport
+builtins.__import__ = customimport
 
